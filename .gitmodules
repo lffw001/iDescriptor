@@ -4,12 +4,12 @@
 [submodule "lib/win-ifuse"]
 	path = lib/win-ifuse
 	url = https://github.com/uncor3/win-ifuse.git
-[submodule "lib/idevice-rs"]
-	path = lib/idevice-rs
-	url = https://github.com/uncor3/idevice.git
 [submodule "lib/uxplay"]
 	path = lib/uxplay
 	url = https://github.com/iDescriptor/uxplay.git
 [submodule "lib/zupdater"]
 	path = lib/zupdater
 	url = https://github.com/libZQT/zupdater.git
+[submodule "lib/idevice-rs"]
+	path = lib/idevice-rs
+	url = https://github.com/uncor3/idevice

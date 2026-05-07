@@ -155,7 +155,7 @@ make sure to do "sudo pacman -Syu" otherwise it's not going to find libimobilede
 | ------------------------------------------------------ | -------------- | --------------------------------------------------------------------- |
 | [AirPlay](#airplay)                                    | ✅ Implemented | Cast your device screen to your computer.                             |
 | [Download & Install Apps From Apple Store](#app-store) | ✅ Implemented | Download and install apps directly from the Apple Store.              |
-| [Virtual Location](#virtual-location)                  | ✅ Implemented | Simulate GPS location. Requires a mounted Developer Disk Image.       |
+| [Virtual Location](#virtual-location)                  | ✅ Implemented | Simulate GPS location.                                                |
 | [iFuse Filesystem Mount](#ifuse-filesystem-mount)      | ✅ Implemented | Mount the device's filesystem. (Windows & Linux only)                 |
 | Gallery                                                | ✅ Implemented | -                                                                     |
 | File Explorer                                          | ✅ Implemented | Explore the device's filesystem.                                      |
@@ -275,7 +275,7 @@ You might get this pop-up on any platform this is because this app uses secure b
   <br/>
   <a href="https://www.cape.co/"><img width="405" src="./resources/repo/cape.svg"></a>
   <br/>
-  Cape is first-of-its kind private and secure consumer cellular service in the US,
+  Cape is the first-of-its kind private and secure consumer cellular service in the US,
 
 <a href="https://www.cape.co/get-cape/enroll">Try Cape risk-free for just $30 for your first month.</a> Use code `trycape30` at checkout to apply.
 
@@ -319,13 +319,17 @@ For more info [UDEV.md](./UDEV.md)
 
 Contributions are welcome!
 
+Please check the [Roadmap](#roadmap) first to make sure what you’re contributing to is not already under development and does not conflict with our CI/CD or overall project direction.
+
 We actively develop on dev branch, so please base your pull requests off of that branch.
 
-You can also send a pr to main branch but it should be something related to building, publish to some package manager or documentation.
+You can also send a pr to main branch but it should be something related to building, translations, publish to some package manager or documentation.
 
 ## Roadmap
 
 **Planned Features**
+
+This codebase is currently undergoing a major refactor and rewrite in `qml` and `qmeta-qml` branches
 
 - Migrate to idevice-rs `DONE` ✅
 - Wireless Connection Support `DONE` ✅
@@ -333,11 +337,14 @@ You can also send a pr to main branch but it should be something related to buil
 - Virtual Location Support for iOS 17 and above `DONE` ✅
 - Migrate to UCRT for better performance and stability `Windows`
 - New UI/UX improvements `Windows` ✅
-- Read gallery from Photos.sqlite
-- Download any version of any app from app store
+- Read gallery from Photos.sqlite (under development)
+- Translations (currently scaffolding the base, contributions will be welcome once it’s ready) 
+- Device Backup
+- Download any version of any app from app store (under development)
 - Implement sideloading
 - Import music
 - Companion app on device
+- Interact from the CLI
 
 **You can always become a sponsor/donate to request/prioritize a feature or speed up the development process!**
 
